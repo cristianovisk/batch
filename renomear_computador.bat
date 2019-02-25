@@ -19,7 +19,7 @@ cls
 echo Digite a senha do usuario %user%:
 set /p passwd=
 cls
-set user=MotaMachado.local\%user%
+set user=%user%
 echo Fazendo mudanca de nome do host %old% para %new% com o usuario %user%...
 echo Aguarde...
 netdom RenameComputer %old% /NewName:%new% /UserD:%user% /PasswordD:%passwd% /UserO:%user% /PasswordO:%passwd% /force /reboot
